@@ -62,9 +62,7 @@ def gaussian_elimination(
     """
 
 
-    # augmented matrix
-    augmented_mat: NDArray[float64] = np.concatenate((coefficients, vector), axis=1)
-    augmented_mat = augmented_mat.astype("float64")
+   
 
     # scale the matrix leaving it triangular
     for row in range(rows - 1):
