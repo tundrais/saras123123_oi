@@ -60,10 +60,7 @@ def gaussian_elimination(
     array([[0. ],
            [2.5]])
     """
-    # coefficients must to be a square matrix so we need to check first
-    rows, columns = np.shape(coefficients)
-    if rows != columns:
-        return np.array((), dtype=float)
+
 
     # augmented matrix
     augmented_mat: NDArray[float64] = np.concatenate((coefficients, vector), axis=1)
